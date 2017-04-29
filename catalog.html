@@ -26,17 +26,16 @@
       <div class="logo">
         <a href="index.html"><img src="img/logo.png" alt="Gllacy Shop" width="154" height="64"></a>
       </div>
-
       <!-- Главное меню -->
       <nav class="main-navigation">
         <ul>
-          <li><a href="#">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Достака и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
       </nav>
-
-      <div class="header-aside">
+      <!-- Боковая часть меню -->
+      <div class="header-aside col-1">
         <div class="user-block">
           <!-- Кнопки -->
           <a href="#" class="btn btn-nav btn-nav-search"></a>
@@ -45,22 +44,22 @@
         </div>
         <div class="contacts-header">
             <!-- Время работы -->
-            <span class="hours">c 10 до 20, ежедневно</span>
+            <span class="hours">С 10 до 20, ежедневно</span>
             <!-- Телефон -->
             <span class="tel">8 812 450-25-25</span>
-          </div>
+        </div>
       </div>
     </header>
 
-    <main class="content">
-      <nav class="bredcrumbs">
+    <main class="catalog-content">
+      <nav class="catalog-breadcrumbs">
         <ul>
           <li><a href="index.html">Главная »</a></li>
           <li><a href="#">Каталог »</a></li>
           <li><a href="#">Сливочное</a></li>
         </ul>
       </nav>
-      <h1>Сливочное мороженое</h1>
+      <h1 class="catalog-title">Сливочное мороженое</h1>
       <!-- Фильтры -->
       <section class="box-filters">
         <div class="filter-container">
@@ -77,7 +76,8 @@
 
               <fieldset class="filter-price">
                 <legend>Цена: 100 руб. – 500 руб.</legend>
-                <input type="range" name="range" id="price-range" min="100" max="250" step="10">
+                <input type="range" name="range" id="price-range" min="100" step="10">
+                <input type="range" name="range" id="price-range" max="250" step="10">
               </fieldset>
 
               <fieldset class="filter-fat">
@@ -96,7 +96,6 @@
               </fieldset>
 
             </div>
-
             <div class="filter-row">
               <fieldset class="filler-taste">
 
@@ -200,23 +199,20 @@
           <span class="price">420 <span class="rub"> р</span>/кг</span>
           <a class="btn btn-item" href="#">Сливочное с мятным сиропом</a>
         </div>
-
-        <!-- Страницы каталога -->
-        <div class="pagination">
-          <a class="page-btn" href="#">1</a>
-          <a class="page-btn" href="#">2</a>
-          <a class="page-btn" href="#">3</a>
-          <a class="page-btn" href="#">4</a>
-          <a class="page-btn" href="#">5</a>
-        </div>
-
       </section>
+      <!-- Страницы каталога -->
+      <div class="catalog-pagination">
+        <a class="btn btn-page" href="#">1</a>
+        <a class="btn btn-page" href="#">2</a>
+        <a class="btn btn-page" href="#">3</a>
+        <a class="btn btn-page" href="#">4</a>
+        <a class="btn btn-page" href="#">5</a>
+      </div>
     </main>
     <!-- Подвал -->
     <footer class="main-footer">
-
       <!-- Иконки социальных сетей -->
-      <section class="footer-social">
+      <section class="footer-social col-1">
         <a class="btn btn-social btn-social-twt" href="#"><img src="img/icons/twitter.png" alt="Twitter"></a>
         <a class="btn btn-social btn-social-inst" href="#"><img src="img/icons/instagram.png" alt="Instagram"></a>
         <a class="btn btn-social btn-social-vk" href="#"><img src="img/icons/vk.png" alt="Вконтакте"></a>
@@ -224,21 +220,20 @@
       </section>
       <!-- Полезные ссылки -->
       <nav class="footer-navigation">
-        <ul class="col-left">
+        <ul class="footer-col-left">
           <li><a href="#">Для поставщиков</a></li>
           <li><a href="#">О производстве</a></li>
         </ul>
-        <ul class="col-right">
+        <ul class="footer-col-right">
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </nav>
       <!-- Копирайт -->
-      <section class="footer-copyright">
+      <section class="footer-copyright col-1">
         <a class="author" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmllogo.png" alt="html academy" width="108" height="38"></a>
         <p>Сделано в HTML Academy © 2017</p>
       </section>
-
     </footer>
   </div>
 </body>
