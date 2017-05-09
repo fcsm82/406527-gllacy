@@ -19,10 +19,16 @@
 
 </head>
 <body class="index-page">
+
+  <input type="radio" id="btn-1" name="toggle" checked>
+  <input type="radio" id="btn-2" name="toggle">
+  <input type="radio" id="btn-3" name="toggle">
+
   <!-- Контейнер - центровщик -->
   <div class="container">
     <!-- Шапка страницы -->
     <header class="main-header">
+
       <div class="top-header">
         <!-- Логотип -->
         <div class="logo">
@@ -63,8 +69,8 @@
             </form>
             <a href="#" class="btn btn-nav btn-nav-basket">Пусто</a>
         </div>
-
       </div>
+
       <div class="add-header">
         <div class="contacts-header">
             <!-- Время работы -->
@@ -80,33 +86,34 @@
       <div class="promo-slider">
         <div class="sliders">
           <!-- Слайдер #1 --> <!-- ul -->
-          <div class="slider-item">
+          <div class="slider-item" id="slide1">
             <!-- Заголовок -->
             <h2 class="slider-title">Крем-брюле и пломбир<br>с малиновым джемом</h2>
             <!-- Главная кнопка-->
             <a href="#" class="btn btn-slider">Давайте оба!</a>
           </div>
           <!-- Слайдер #2 -->
-          <div class="slider-item">
+          <div class="slider-item" id="slide2">
             <!-- Заголовок -->
             <h2 class="slider-title">Шоколадный пломбир<br>и лимонный сорбет </h2>
             <!-- Главная кнопка-->
-            <a href="#" class="btn btn-promo btn-main-promo">Давайте оба!</a>
+            <a href="#" class="btn btn-slider">Давайте оба!</a>
           </div>
           <!-- Слайдер #3 -->
-          <div class="slider-item">
+          <div class="slider-item" id="slide3">
             <!-- Заголовок -->
             <h2 class="slider-title">Пломбир с помадкой <br> и клубничный щербет</h2>
             <!-- Главная кнопка-->
-            <a href="#" class="btn btn-promo btn-main-promo">Давайте оба!</a>
+            <a href="#" class="btn btn-slider">Давайте оба!</a>
+          </div>
+          <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
           </div>
         </div>
         <!--  Переключатель слайдов -->
-        <div class="btn-sliders">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+
       </div>
       <!-- Промо-акции -->
       <section class="promo">
@@ -199,18 +206,18 @@
         </div>
         <!-- Подписка на информационную рассылку -->
         <div class="news-right col-2">
-            <p>
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-            всего самого вкусного, что у нас происходит. Обещаем не спамить
-            и не слать всякой ненужной ерунды. Честно =)
-            </p>
-            <!-- Форма отправки эл. адреса -->
-            <form class="form-email" id="email">
-              <input type="email" name="address" id="address" placeholder="Электронная почта">
-              <button class="btn" type="submit" form="email" formmethod="get" value="address">
-                Отправить
-              </button>
-            </form>
+          <p>
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+          всего самого вкусного, что у нас происходит. Обещаем не спамить
+          и не слать всякой ненужной ерунды. Честно =)
+          </p>
+          <!-- Форма отправки эл. адреса -->
+          <form class="form-email" id="email">
+            <input type="email" name="address" id="address" placeholder="Электронная почта">
+            <button class="submit-btn" type="submit" form="email" formmethod="get" value="address">
+              Отправить
+            </button>
+          </form>
         </div>
       </section>
     </main>
@@ -221,9 +228,9 @@
     <section class="contacts">
       Адрес главного офиса <br>и офлайн магазина:<br>
       <span class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-      Для заказов по телефону:<br>
-      <span class="tel"> 8 812 450-25-25 </span><br>
-      (с 10 до 20 ежедневно)<br>
+      Для заказов по телефону:
+      <span class="tel"> 8 812 450-25-25 </span>
+      (с 10 до 20 ежедневно)
       <!-- Форма обрятной связи-->
       <a class="btn btn-feedback" href="#">Форма обратной связи</a>
     </section>
@@ -233,11 +240,11 @@
     <footer class="main-footer">
 
         <!-- Иконки социальных сетей -->
-        <section class="footer-social col-1">
-          <a class="social-btn social-btn-twt" href="#">Twitter</a>
-          <a class="social-btn social-btn-inst" href="#">Instagram</a>
-          <a class="social-btn social-btn-fb" href="#">Vkontakte</a>
-          <a class="social-btn social-btn-vk" href="#">Facebook</a>
+        <section class="footer-social">
+          <a class="btn-social btn-social-twt" href="#">Twitter</a>
+          <a class="btn-social btn-social-inst" href="#">Instagram</a>
+          <a class="btn-social btn-social-fb" href="#">Vkontakte</a>
+          <a class="btn-social btn-social-vk" href="#">Facebook</a>
         </section>
         <!-- Полезные ссылки -->
         <nav class="footer-navigation">
@@ -251,12 +258,26 @@
           </ul>
         </nav>
         <!-- Копирайт -->
-        <section class="footer-copyright col-1">
+        <section class="footer-copyright">
           <a class="author" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmllogo.png" alt="html academy" width="108" height="38"></a>
           <span class="made">Сделано в HTML Academy © 2017</span>
         </section>
 
     </footer>
   </div>
+  <div class="modal-content">
+     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+     <h2 class="modal-content-title">Мы обязательно вам ответим!</h2>
+
+     <form class="feedback-form" action="#" method="post">
+       <input class="user" type="text" name="user" placeholder="Как вас зовут?">
+       <input class="email" type="email"  name="email" placeholder="Ваша почта для ответа?">
+       <input class="message" type="textarea" name="message" placeholder="Напишите что-нибудь...">
+       <button class="send-btn" type="submit">Отправить</button>
+     </form>
+
+     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+
+   </div>
 </body>
 </html>
