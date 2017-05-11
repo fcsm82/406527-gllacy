@@ -41,7 +41,7 @@
               <a href="catalog.html">Каталог</a>
                 <ul class="sub-menu">
                   <li class="active"><a href="#">Новинки</a></li>
-                  <li><a href="#">Сливочное</a></li>
+                  <li><a href="catalog.html">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
                   <li><a href="#">Фруктовый лед</a></li>
                   <li><a href="#">Мелорин</a></li>
@@ -53,21 +53,25 @@
         </nav>
         <!-- Боковая часть меню -->
         <div class="user-block">
-            <a href="#" class="btn btn-nav btn-nav-search"></a>
-            <form class="modal-search">
-              <input type="text" name="search" id="search" placeholder="Что ищем?">
-            </form>
-            <a href="#" class="btn btn-nav btn-nav-login">Вход</a>
+            <a href="#" class="btn-nav btn-nav-search"></a>
+
+              <form class="modal-search">
+                <input type="search" name="search" placeholder="Что ищем?">
+              </form>
+
+
+            <a href="#" class="btn-nav btn-nav-login">Вход</a>
             <form class="modal-login">
               <input type="text" name="login" id="login" placeholder="Электронная почта">
-              <input type="text" name="login" id="login" placeholder="Пароль">
+              <input type="text" name="password" id="password" placeholder="Пароль">
               <button class="btn btn-login" type="submit">Войти</button>
               <div class="reg-links">
                 <a class="restore" href="#">Забыли пароль?</a>
                 <a class="signup" href="#">Новая регистрация</a>
               </div>
             </form>
-            <a href="#" class="btn btn-nav btn-nav-basket">Пусто</a>
+            <a href="#" class="btn-nav btn-nav-basket">Пусто</a>
+
         </div>
       </div>
 
@@ -106,14 +110,13 @@
             <!-- Главная кнопка-->
             <a href="#" class="btn btn-slider">Давайте оба!</a>
           </div>
+          <!--  Переключатель слайдов -->
           <div class="slider-controls">
               <label for="btn-1"></label>
               <label for="btn-2"></label>
               <label for="btn-3"></label>
           </div>
         </div>
-        <!--  Переключатель слайдов -->
-
       </div>
       <!-- Промо-акции -->
       <section class="promo">
@@ -141,24 +144,28 @@
           <img src="img/catalog/item1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
           <div class="price">310<span class="rub">/</span><span class="kg">кг</span></div>
           <a href="#" class="item-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a class="btn btn-preview" href="#">Быстрый просмотр</a>
         </div>
 
         <div class="pop-item">
           <img src="img/catalog/item2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
           <div class="price">380<span class="rub"></span>/<span class="kg">кг</span></div>
           <a href="#" class="item-description">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="btn btn-preview" href="#">Быстрый просмотр</a>
         </div>
 
         <div class="pop-item">
           <img src="img/catalog/item3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
           <div class="price">355<span class="rub"></span>/<span class="kg">кг</span></div>
           <a href="#" class="item-description">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="btn btn-preview" href="#">Быстрый просмотр</a>
         </div>
 
         <div class="pop-item">
           <img src="img/catalog/item4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           <div class="price">415<span class="rub"></span>/<span class="kg">кг</span></div>
           <a href="#" class="item-description">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="btn btn-preview" href="#">Быстрый просмотр</a>
         </div>
 
       </section>
@@ -214,7 +221,7 @@
           <!-- Форма отправки эл. адреса -->
           <form class="form-email" id="email">
             <input type="email" name="address" id="address" placeholder="Электронная почта">
-            <button class="submit-btn" type="submit" form="email" formmethod="get" value="address">
+            <button class="btn btn-submit" type="submit" form="email" formmethod="get" value="address">
               Отправить
             </button>
           </form>
@@ -272,11 +279,9 @@
      <form class="feedback-form" action="#" method="post">
        <input class="user" type="text" name="user" placeholder="Как вас зовут?">
        <input class="email" type="email"  name="email" placeholder="Ваша почта для ответа?">
-       <input class="message" type="textarea" name="message" placeholder="Напишите что-нибудь...">
-       <button class="send-btn" type="submit">Отправить</button>
+       <textarea class="message" name="message">Напишите что-нибудь...</textarea>
+       <button class="btn btn-send" type="submit">Отправить</button>
      </form>
-
-     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 
    </div>
 </body>
