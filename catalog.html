@@ -61,28 +61,31 @@
               </div>
             </form>
             <a href="#" class="btn-nav btn-nav-basket">2 товара</a>
+
             <div class="modal-basket">
               <table class="order">
                 <tr>
-                  <td class="td-icon"></td>
+                  <td class="td-icon"><span class="td-cross"></span></td>
                   <td class="td-img"><img src="img/catalog/item1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
                   <td class="td-name">Пломбир с апельсиновым джемом</td>
                   <td class="td-amount">1,5 кг х <span class="item-price">200 руб.</span></td>
                   <td class="td-price">300 руб.</td>
                 </tr>
                 <tr>
-                  <td class="td-icon"></td>
+                  <td class="td-icon"><span class="td-cross"></span></td>
                   <td class="td-img"><img src="img/catalog/item3.jpg" alt="Клубничный пломбир с присыпкой  из белого шоколада" width="33" height="33"></td>
                   <td class="td-name">Клубничный пломбир с присыпкой  из белого шоколада</td>
                   <td class="td-amount">1,5 кг х <span class="item-price">300 руб.</span></td>
                   <td class="td-price">450 руб.</td>
                 </tr>
-                <tr>
+
+                <tr class="row-total">
                   <td colspan="5" class="td-total">Итого: 750 руб.</td>
                 </tr>
               </table>
               <a href="#" class="btn btn-order">Оформить заказ</a>
             </div>
+
         </div>
 
       </div>
@@ -125,10 +128,15 @@
               </fieldset>
 
 
-              <fieldset class="filter-price">
+              <fieldset class="filter-price range">
                 <legend class="filter-title">Цена: 100 руб. – 500 руб.</legend>
                 <input type="range" name="price-min" id="price-min" min="100" max="240" step="10">
                 <input type="range" name="price-max" id="price-max" max="250" max="500"step="10">
+
+                <div class="range-line"></div>
+                <span class="range-control"></span>
+                <span class="range-control"></span>
+
               </fieldset>
 
 
@@ -296,7 +304,7 @@
       <!-- Страницы каталога -->
       <div class="paginator">
         <a class="prev disabled" href="#prev"></a>
-        <a class="current page" href="#">1</a>
+        <a class="page current" href="#">1</a>
         <a class="page" href="#">2</a>
         <a class="page" href="#">3</a>
         <a class="page" href="#">4</a>
