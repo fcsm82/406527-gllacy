@@ -119,7 +119,7 @@
 
               <fieldset class="filter-sort">
                 <legend class="filter-title">Сортировка:</legend>
-                <label class="filter-arrow" for="az">по популярности</label>
+                <span class="filter-arrow">по популярности</span>
                 <select name="az">
                   <option value="popular">по популярности</option>
                   <option value="name">по наименованию</option>
@@ -131,7 +131,7 @@
               <fieldset class="filter-price range">
                 <legend class="filter-title">Цена: 100 руб. – 500 руб.</legend>
                 <input type="range" name="price-min" id="price-min" min="100" max="240" step="10">
-                <input type="range" name="price-max" id="price-max" max="250" max="500"step="10">
+                <input type="range" name="price-max" id="price-max" min="250" max="500" step="10">
 
                 <div class="range-line"></div>
                 <span class="range-control"></span>
@@ -206,7 +206,7 @@
 
               </fieldset>
 
-              <button class="btn-apply" type="submit" form="filter-taste" formmethod="get" value="apply">
+              <button class="btn-apply" type="submit">
                 Применить
               </button>
             </div>
