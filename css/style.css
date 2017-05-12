@@ -1674,9 +1674,10 @@ body > input[type="radio"] {
 }
 
 .range-control {
-  position: absolute;
-  top: 25px;
-  left: 36px;
+  position: relative;
+  top: -12px;
+  left: 37px;
+
 
   width: 20px;
   height: 20px;
@@ -1694,7 +1695,9 @@ body > input[type="radio"] {
 
 .range-control:last-child {
   left: auto;
-  right: 66px;
+  top: -32px;
+  left: 134px;
+
 }
 
 /* ============================= */
