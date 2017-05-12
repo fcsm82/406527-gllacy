@@ -199,6 +199,7 @@ body {
 
 .main-menu .sub-menu .active {
   background-color: #d07058;
+  color: #ffffff;
 }
 
 .breadcrumbs .active {
@@ -1697,7 +1698,6 @@ body > input[type="radio"] {
   left: auto;
   top: -32px;
   left: 134px;
-
 }
 
 /* ============================= */
