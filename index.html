@@ -17,10 +17,12 @@
 
 </head>
 <body class="index-page">
-
-  <!-- <input type="radio" id="btn-1" name="toggle" checked>
+  <input type="radio" id="btn-1" name="toggle" checked>
   <input type="radio" id="btn-2" name="toggle">
-  <input type="radio" id="btn-3" name="toggle">-->
+  <input type="radio" id="btn-3" name="toggle">
+  <div class="site-wrapper">
+
+
 
   <!-- Контейнер - центровщик -->
   <div class="container">
@@ -38,7 +40,7 @@
             <li>
               <a href="catalog.html">Каталог</a>
                 <ul class="sub-menu">
-                  <li class="active"><a href="#">Новинки</a></li>
+                  <li><a class="novelties" href="#">Новинки</a></li>
                   <li><a href="catalog.html">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
                   <li><a href="#">Фруктовый лед</a></li>
@@ -53,19 +55,19 @@
         <div class="user-block">
             <a href="#" class="btn-nav btn-nav-search"></a>
 
-              <form class="modal-search">
+              <form class="popup-search">
                 <input type="search" name="search" placeholder="Что ищем?">
               </form>
 
 
             <a href="#" class="btn-nav btn-nav-login">Вход</a>
-            <form class="modal-login">
+            <form class="popup-login">
               <input type="text" name="login" id="login" placeholder="Электронная почта">
               <input type="text" name="password" id="password" placeholder="Пароль">
               <button class="btn btn-login" type="submit">Войти</button>
               <div class="reg-links">
-                <a class="restore" href="#">Забыли пароль?</a>
-                <a class="signup" href="#">Новая регистрация</a>
+                <a class="restore link-black" href="#">Забыли пароль?</a>
+                <a class="signup link-black" href="#">Новая регистрация</a>
               </div>
             </form>
             <a href="#" class="btn-nav btn-nav-basket">Пусто</a>
@@ -84,6 +86,7 @@
     </header>
     <!-- Промо - блок -->
     <main class="index-content">
+
       <!-- Блок со слайдером -->
       <div class="promo-slider">
         <div class="sliders">
@@ -141,28 +144,28 @@
         <div class="pop-item">
           <img src="img/catalog/item1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
           <div class="price">310<span class="rub">/</span><span class="kg">кг</span></div>
-          <a href="#" class="item-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a href="#" class="item-description link-white">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           <a class="btn btn-preview" href="#">Быстрый просмотр</a>
         </div>
 
         <div class="pop-item">
           <img src="img/catalog/item2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
           <div class="price">380<span class="rub"></span>/<span class="kg">кг</span></div>
-          <a href="#" class="item-description">Сливочно-кофейное с кусочками шоколада</a>
+          <a href="#" class="item-description link-white">Сливочно-кофейное с кусочками шоколада</a>
           <a class="btn btn-preview" href="#">Быстрый просмотр</a>
         </div>
 
         <div class="pop-item">
           <img src="img/catalog/item3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
           <div class="price">355<span class="rub"></span>/<span class="kg">кг</span></div>
-          <a href="#" class="item-description">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a href="#" class="item-description link-white">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <a class="btn btn-preview" href="#">Быстрый просмотр</a>
         </div>
 
         <div class="pop-item">
           <img src="img/catalog/item4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           <div class="price">415<span class="rub"></span>/<span class="kg">кг</span></div>
-          <a href="#" class="item-description">Сливочное крем-брюле с карамельной подливкой</a>
+          <a href="#" class="item-description link-white">Сливочное крем-брюле с карамельной подливкой</a>
           <a class="btn btn-preview" href="#">Быстрый просмотр</a>
         </div>
 
@@ -207,7 +210,7 @@
         <!-- Анонс новостей -->
         <div class="news-left col-2">
           <h4 class="news-title">Новое в нашем блоге</h4>
-          <a class="to-post" href="#">10  способов сервировки<br>фруктовых щербетов к<br> столу</a>
+          <a class="to-post link-black" href="#">10  способов сервировки<br>фруктовых щербетов к<br> столу</a>
         </div>
         <!-- Подписка на информационную рассылку -->
         <div class="news-right col-2">
@@ -254,18 +257,18 @@
         <!-- Полезные ссылки -->
         <nav class="footer-navigation">
           <ul class="footer-col">
-            <li><a href="#"><b>Для поставщиков</b></a></li>
-            <li><a href="#">О производстве</a></li>
+            <li><a class="link-white" href="#"><b>Для поставщиков</b></a></li>
+            <li><a class="link-white" href="#">О производстве</a></li>
           </ul>
           <ul class="footer-col">
-            <li><a href="#">Наши документы</a></li>
-            <li><a href="#">Экологические стандарты</a></li>
+            <li><a class="link-white" href="#">Наши документы</a></li>
+            <li><a class="link-white" href="#">Экологические стандарты</a></li>
           </ul>
         </nav>
         <!-- Копирайт -->
         <section class="footer-copyright">
           <a class="author" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmllogo.png" alt="html academy" width="108" height="38"></a>
-          <span class="made">Сделано в HTML Academy © 2017</span>
+          <span class="made">Сделано <a class="link-white" href="https://htmlacademy.ru/intensive/htmlcss">в HTML Academy </a>© 2017<span>
         </section>
 
     </footer>
@@ -282,5 +285,6 @@
      </form>
 
    </div>
+ </div>
 </body>
 </html>
