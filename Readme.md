@@ -1,4 +1,5 @@
 # Личный проект «Глейси»
+https://fcsm82.github.io/gllacy/
 
 * Студент: [Alexey Ivanov](https://up.htmlacademy.ru/htmlcss/17/user/406527).
 * Наставник: `Евгений Алипкин`.
